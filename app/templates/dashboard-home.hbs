@@ -1,0 +1,6 @@
+{{#contacts-table contacts=model}}
+	{{#each model as |contact|}}
+		<h1>{{contact.name}}</h1>
+	{{/each}}
+{{/contacts-table}}
+{{outlet}}

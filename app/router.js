@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('dashboard-home', {path: 'contactos'});
+  this.route('contacts', function() {
+    this.route('datafast', {path: 'proyecto'});
+  });
 });
 
 export default Router;

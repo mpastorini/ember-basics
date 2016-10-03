@@ -1,0 +1,23 @@
+{{yield}}
+<table>
+	<thead>
+		<th>Nombre</th>
+		<th>Email</th>
+		<th>SMS</th>
+	</thead>
+	<tbody>
+		{{#each contacts as |contact|}}
+		<tr>
+			<td>
+				{{contact.name}}
+			</td>
+			<td>
+				{{contact.email}}
+			</td>
+			<td>
+				{{contact.channel_sms}}
+			</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
